@@ -18,35 +18,24 @@
             <div class="container-xl">
                 <a class="navbar-brand" href="#"><img src="logo.png" alt="FilmyDice"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="fa fa-bars"></span>
-                </button>
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation"> <span class="fa fa-bars"></span> </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="movies.html">Movies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="up-coming.html">Up Comming</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tv-shows.html">TV Shows</a>
-                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"> <a class="nav-link active" href="movies.html">Movies</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="up-coming.html">Up Comming</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="tv-shows.html">TV Shows</a></li>
                     </ul>
                     <form class="d-flex" action="https://www.google.com/search" method="GET">
                         <label for="search"></label>
-                        <input class="form-control me-2" type="search" name="q" placeholder="Search"
-                            aria-label="Search">
+                        <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-light" type="submit">Search</button>
                     </form>
                 </div>
             </div>
         </nav>
-        <div class="pt-5 container-lg text-capitalize">
+        <!-- <div class="pt-5 container-lg text-capitalize">
             <section class="pt-3" style="cursor: pointer;">
                 <ul class="d-flex flex-row m-0 p-0 overflow-auto" style="white-space: nowrap;">
                     <li class="list new-nav-link active" data-filter="all">all</li>
@@ -59,227 +48,103 @@
                     <li class="list new-nav-link" data-filter="others">others</li>
                 </ul>
             </section>
-        </div>
+        </div> -->
     </header>
     <main class="container-fluid">
-        <div class="py-3 row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4 movies">
-            <div class="col bollywood">
-                <div class="card">
-                    <a href="movies/2021/Premaatur.html" class="card-link">
-                        <img src="images/poster.png" class="card-img-top" alt="premaatur" width="100%" height="100%">
-                        <h1 class="p-2 mb-0 h6">This is a long title of the article</h1>
-                    </a>
-                    <div class="d-flex justify-content-between p-2">
-                        <div class="rating-starts m-0">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                        </div>
-                        <div class="rating">
-                            <p class="m-0">3.5</p>
-                        </div>
-                    </div>
+        <div class="container-lg">
+            <div class="pt-5">
+                <div class="new-title pt-4">
+                    <h1 class="h4 text-capitalize">new released movies</h1>
+                    <p class="line"></p>
                 </div>
             </div>
-            <div class="col hollywood">
-                <div class="card">
-                    <a href="index.html" class="card-link">
-                        <img src="images/02.webp" class="card-img-top" alt="..." width="100%" height="100%">
-                        <h1 class="p-2 mb-0 h6">This is a long title of the article</h1>
-                    </a>
-                    <div class="d-flex justify-content-between p-2">
-                        <div class="rating-starts m-0">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                        </div>
-                        <div class="rating">
-                            <p class="m-0">3.5</p>
-                        </div>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 gx-4 movies">            
+                <div class="col">
+                    <div class="card">
+                        <a href="movies/2021/Shang-Chi-and-the-Legend-of-the-Ten-Rings.html" class="card-link">
+                            <img src="movies/images/Shang-Chi-and-the-Legend-of-the-Ten-Rings.webp" class="card-img-top" alt="premaatur" width="100%" height="100%">
+                            <h1 class="p-2 mb-0 h6">Shang-Chi and the Legend of the Ten Rings</h1>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="col tollywood">
-                <div class="card">
-                    <a href="index.html" class="card-link">
-                        <img src="images/03.webp" class="card-img-top" alt="..." width="100%" height="100%">
-                        <h1 class="p-2 mb-0 h6">This is a long title of the article</h1>
-                    </a>
-                    <div class="d-flex justify-content-between p-2">
-                        <div class="rating-starts m-0">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                        </div>
-                        <div class="rating">
-                            <p class="m-0">3.5</p>
-                        </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="movies/2021/Malignant.html" class="card-link">
+                            <img src="movies/images/Malignant.webp" class="card-img-top" alt="premaatur" width="100%" height="100%">
+                            <h1 class="p-2 mb-0 h6">Malignant</h1>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="col kollywood">
-                <div class="card">
-                    <a href="index.html" class="card-link">
-                        <img src="images/04.webp" class="card-img-top" alt="..." width="100%" height="100%">
-                        <h1 class="p-2 mb-0 h6">This is a long title of the article</h1>
-                    </a>
-                    <div class="d-flex justify-content-between p-2">
-                        <div class="rating-starts m-0">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                        </div>
-                        <div class="rating">
-                            <p class="m-0">3.5</p>
-                        </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="movies/2021/Gunpowder-Milkshake.html" class="card-link">
+                            <img src="movies/images/Gunpowder-Milkshake.webp" class="card-img-top" alt="premaatur" width="100%" height="100%">
+                            <h1 class="p-2 mb-0 h6">Gunpowder Milkshake</h1>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="col mollywood">
-                <div class="card">
-                    <a href="index.html" class="card-link">
-                        <img src="images/05.webp" class="card-img-top" alt="..." width="100%" height="100%">
-                        <h1 class="p-2 mb-0 h6">This is a long title of the article</h1>
-                    </a>
-                    <div class="d-flex justify-content-between p-2">
-                        <div class="rating-starts m-0">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                        </div>
-                        <div class="rating">
-                            <p class="m-0">3.5</p>
-                        </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="movies/2021/The-Conjuring-The-Devil-Made-Me-Do-It.html" class="card-link">
+                            <img src="movies/images/The-Conjuring-The-Devil-Made-Me-Do-It.webp" class="card-img-top" alt="premaatur" width="100%" height="100%">
+                            <h1 class="p-2 mb-0 h6">The Conjuring: The Devil Made Me Do It</h1>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="col sandalwood">
-                <div class="card">
-                    <a href="index.html" class="card-link">
-                        <img src="images/01.webp" class="card-img-top" alt="..." width="100%" height="100%">
-                        <h1 class="p-2 mb-0 h6">This is a long title of the article</h1>
-                    </a>
-                    <div class="d-flex justify-content-between p-2">
-                        <div class="rating-starts m-0">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                        </div>
-                        <div class="rating">
-                            <p class="m-0">3.5</p>
-                        </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="movies/2021/Chehre.html" class="card-link">
+                            <img src="movies/images/Chehre.webp" class="card-img-top" alt="premaatur" width="100%" height="100%">
+                            <h1 class="p-2 mb-0 h6">Chehre</h1>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="col sandalwood">
-                <div class="card">
-                    <a href="movies/2021/moviename.html" class="card-link">
-                        <img src="images/01.webp" class="card-img-top" alt="..." width="100%" height="100%">
-                        <h1 class="p-2 mb-0 h6">This is a long title of the article</h1>
-                    </a>
-                    <div class="d-flex justify-content-between p-2">
-                        <div class="rating-starts m-0">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                        </div>
-                        <div class="rating">
-                            <p class="m-0">3.5</p>
-                        </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="movies/2021/Thalaivi.html" class="card-link">
+                            <img src="movies/images/Thalaivi.webp" class="card-img-top" alt="premaatur" width="100%" height="100%">
+                            <h1 class="p-2 mb-0 h6">Thalaivi</h1>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="col bollywood">
-                <div class="card">
-                    <a href="index.html" class="card-link">
-                        <img src="images/02.webp" class="card-img-top" alt="..." width="100%" height="100%">
-                        <h1 class="p-2 mb-0 h6">This is a long title of the article</h1>
-                    </a>
-                    <div class="d-flex justify-content-between p-2">
-                        <div class="rating-starts m-0">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                        </div>
-                        <div class="rating">
-                            <p class="m-0">3.5</p>
-                        </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="movies/2021/Bellbottom.html" class="card-link">
+                            <img src="movies/images/Bellbottom.webp" class="card-img-top" alt="premaatur" width="100%" height="100%">
+                            <h1 class="p-2 mb-0 h6">Bellbottom</h1>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="col hollywood">
-                <div class="card">
-                    <a href="index.html" class="card-link">
-                        <img src="images/03.webp" class="card-img-top" alt="..." width="100%" height="100%">
-                        <h1 class="p-2 mb-0 h6">This is a long title of the article</h1>
-                    </a>
-                    <div class="d-flex justify-content-between p-2">
-                        <div class="rating-starts m-0">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                        </div>
-                        <div class="rating">
-                            <p class="m-0">3.5</p>
-                        </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="movies/2021/Laabam.html" class="card-link">
+                            <img src="movies/images/Laabam.webp" class="card-img-top" alt="premaatur" width="100%" height="100%">
+                            <h1 class="p-2 mb-0 h6">Laabam</h1>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="col tollywood">
-                <div class="card">
-                    <a href="index.html" class="card-link">
-                        <img src="images/04.webp" class="card-img-top" alt="..." width="100%" height="100%">
-                        <h1 class="p-2 mb-0 h6">This is a long title of the article</h1>
-                    </a>
-                    <div class="d-flex justify-content-between p-2">
-                        <div class="rating-starts m-0">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                        </div>
-                        <div class="rating">
-                            <p class="m-0">3.5</p>
-                        </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="movies/2021/Seetimaarr.html" class="card-link">
+                            <img src="movies/images/Seetimaarr.webp" class="card-img-top" alt="premaatur" width="100%" height="100%">
+                            <h1 class="p-2 mb-0 h6">Seetimaarr</h1>
+                        </a>
+                    </div>
+                </div> 
+                <div class="col">
+                    <div class="card">
+                        <a href="movies/2021/Raja-Raja-Chora.html" class="card-link">
+                            <img src="movies/images/Raja-Raja-Chora.webp" class="card-img-top" alt="premaatur" width="100%" height="100%">
+                            <h1 class="p-2 mb-0 h6">Raja Raja Chora</h1>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="col others">
-                <div class="card">
-                    <a href="index.html" class="card-link">
-                        <img src="images/05.webp" class="card-img-top" alt="..." width="100%" height="100%">
-                        <h1 class="p-2 mb-0 h6">This is a long title of the article</h1>
-                    </a>
-                    <div class="d-flex justify-content-between p-2">
-                        <div class="rating-starts m-0">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                            <span class="fa fa-star unchecked"></span>
-                        </div>
-                        <div class="rating">
-                            <p class="m-0">3.5</p>
-                        </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="movies/2021/Asmee.html" class="card-link">
+                            <img src="movies/images/Asmee.webp" class="card-img-top" alt="premaatur" width="100%" height="100%">
+                            <h1 class="p-2 mb-0 h6">Asmee</h1>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -287,6 +152,9 @@
     </main>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+
+
+
 </body>
 
 </html>
