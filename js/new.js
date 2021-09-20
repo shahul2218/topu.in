@@ -5,6 +5,6 @@ $("#share").jsSocials({
 text: "\n \n Latest movies, songs and other reviews",
 shareIn: "popup",
 showLabel: false,
-showCount: "inside",
+showCount: false,
 shares: ["facebook", "twitter", "googleplus", "linkedin", "pinterest", "whatsapp"]
 });
