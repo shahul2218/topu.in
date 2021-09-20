@@ -1,6 +1,22 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
+/* @font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Black.ttf);
+    src: url(../fonts/Poppins-BlackItalic.ttf);
+    src: url(../fonts/Poppins-Bold.ttf);
+    src: url(../fonts/Poppins-BoldItalic.ttf);
+    src: url(../fonts/Poppins-BoldItalic.ttf);
+    src: url(../fonts/Poppins-BoldItalic.ttf);
+    src: url(../fonts/Poppins-BoldItalic.ttf);
+    src: url(../fonts/Poppins-BoldItalic.ttf);
+    src: url(../fonts/Poppins-BoldItalic.ttf);
+    src: url(../fonts/Poppins-BoldItalic.ttf);
+    src: url(../fonts/Poppins-BoldItalic.ttf);
+    src: url(../fonts/Poppins-BoldItalic.ttf);
+    src: url(../fonts/Poppins-BoldItalic.ttf);
+    src: url(../fonts/Poppins-BoldItalic.ttf);
+    src: url(../fonts/Poppins-BoldItalic.ttf);
+} */
 /*!
 * Bootstrap v5.1.0 (https://getbootstrap.com/)
 * Copyright 2011-2021 The Bootstrap Authors
@@ -8118,14 +8134,6 @@ fieldset:disabled .btn {
 
 .font-monospace {
     font-family: var(--bs-font-monospace) !important;
-}
-
-.fs-new {
-    font-size: calc(5.375rem + 1.5vw) !important;
-    font-family: 'Pacifico', cursive !important;
-    color: #ff1100 !important;
-    letter-spacing: 14px !important;
-    text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444, 5px 5px 15px #999 !important;
 }
 
 .fs-1 {
