@@ -1,5 +1,5 @@
 @charset "UTF-8"; /* @font-face{font-family: poppins; src: url(../fonts/Poppins-Black.ttf); src: url(../fonts/Poppins-BlackItalic.ttf); src: url(../fonts/Poppins-Bold.ttf); src: url(../fonts/Poppins-BoldItalic.ttf); src: url(../fonts/Poppins-BoldItalic.ttf); src: url(../fonts/Poppins-BoldItalic.ttf); src: url(../fonts/Poppins-BoldItalic.ttf); src: url(../fonts/Poppins-BoldItalic.ttf); src: url(../fonts/Poppins-BoldItalic.ttf); src: url(../fonts/Poppins-BoldItalic.ttf); src: url(../fonts/Poppins-BoldItalic.ttf); src: url(../fonts/Poppins-BoldItalic.ttf); src: url(../fonts/Poppins-BoldItalic.ttf); src: url(../fonts/Poppins-BoldItalic.ttf); src: url(../fonts/Poppins-BoldItalic.ttf);}*/ /*!* Bootstrap v5.1.0 (https://getbootstrap.com/)* Copyright 2011-2021 The Bootstrap Authors* Copyright 2011-2021 Twitter, Inc.* Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -9921,33 +9921,48 @@ p.line {
   }
 }
 .gradient-major .overlay {
-    background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 15%, #ed1c24 100%, rgba(146, 39, 143, 0.5) 100%);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 15%, #000000 100%, rgba(78, 40, 184, 0.5) 100%);
-} 
+  background-image: -webkit-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 15%,
+    #ed1c24 100%,
+    rgba(146, 39, 143, 0.5) 100%
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 15%,
+    #000000 100%,
+    rgba(78, 40, 184, 0.5) 100%
+  );
+}
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .8;
-    z-index: 1;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .new-overlay {
-    position: absolute;
-    bottom: 5px;
-    color: #fff;
-    z-index: 1
+  position: absolute;
+  bottom: 5px;
+  color: #fff;
+  z-index: 1;
 }
-.bb{
-    border-bottom: 2px solid red;
+.bb {
+  border-bottom: 2px solid red;
 }
-i.fa{
+i.fa {
   font-size: 1rem;
 }
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
+}
+.foo-links:hover,
+.foo-links:visited,
+.foo-links:active {
+  border-bottom: 2px solid #d6d1df !important;
 }
