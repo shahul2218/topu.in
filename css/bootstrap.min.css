@@ -87,7 +87,7 @@
 
 body {
   margin: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -9822,9 +9822,7 @@ p.line {
 i.fa {
   font-size: 1rem;
 }
-body {
-  font-family: "Poppins", sans-serif;
-}
+
 .foo-links:hover,
 .foo-links:visited,
 .foo-links:active {
