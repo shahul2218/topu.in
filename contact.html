@@ -61,16 +61,13 @@
 
                         <div class="card-body">
                             <!-- Form -->
-                            <form>
+                            <form action="https://formspree.io/f/xayavvvd" method="POST" id="my-form">
                                 <div class="row gx-3">
                                     <div class="col-sm-6">
                                         <!-- Form -->
                                         <div class="mb-3">
-                                            <label class="form-label" for="hireUsFormFirstName">First
-                                                name</label>
-                                            <input type="text" class="form-control form-control-lg"
-                                                name="hireUsFormNameFirstName" id="hireUsFormFirstName"
-                                                placeholder="First name" aria-label="First name">
+                                            <label class="form-label" for="FirstName">First name</label>
+                                            <input type="text" class="form-control form-control-lg" name="FirstName" id="FirstName" placeholder="First name" aria-label="First name" required>
                                         </div>
                                         <!-- End Form -->
                                     </div>
@@ -79,11 +76,8 @@
                                     <div class="col-sm-6">
                                         <!-- Form -->
                                         <div class="mb-3">
-                                            <label class="form-label" for="hireUsFormLasttName">Last
-                                                name</label>
-                                            <input type="text" class="form-control form-control-lg"
-                                                name="hireUsFormNameLastName" id="hireUsFormLasttName"
-                                                placeholder="Last name" aria-label="Last name">
+                                            <label class="form-label" for="LasttName">Last name</label>
+                                            <input type="text" class="form-control form-control-lg" name="LastName" id="LasttName" placeholder="Last name" aria-label="Last name">
                                         </div>
                                         <!-- End Form -->
                                     </div>
@@ -95,11 +89,8 @@
                                     <div class="col-sm-6">
                                         <!-- Form -->
                                         <div class="mb-3">
-                                            <label class="form-label" for="hireUsFormWorkEmail">Email
-                                                address</label>
-                                            <input type="email" class="form-control form-control-lg"
-                                                name="hireUsFormNameWorkEmail" id="hireUsFormWorkEmail"
-                                                placeholder="email@gmail.com" aria-label="email@gmail.com">
+                                            <label class="form-label" for="WorkEmail">Email address</label>
+                                            <input type="email" class="form-control form-control-lg" name="WorkEmail" id="WorkEmail" placeholder="email@gmail.com" aria-label="email@gmail.com" required>
                                         </div>
                                         <!-- End Form -->
                                     </div>
@@ -108,11 +99,8 @@
                                     <div class="col-sm-6">
                                         <!-- Form -->
                                         <div class="mb-3">
-                                            <label class="form-label" for="hireUsFormPhone">Phone <span
-                                                    class="form-label-secondary">(Optional)</span></label>
-                                            <input type="text" class="form-control form-control-lg"
-                                                name="hireUsFormNamePhone" id="hireUsFormPhone"
-                                                placeholder="+x(xxx)xxx-xx-xx" aria-label="+x(xxx)xxx-xx-xx">
+                                            <label class="form-label" for="Phone">Phone <span class="form-label-secondary">(Optional)</span></label>
+                                            <input type="text" class="form-control form-control-lg" name="Phone" id="Phone" placeholder="96******25" aria-label="96******25">
                                         </div>
                                         <!-- End Form -->
                                     </div>
@@ -122,21 +110,23 @@
 
                                 <!-- Form -->
                                 <div class="mb-3">
-                                    <label class="form-label" for="hireUsFormDetails">Details</label>
-                                    <textarea class="form-control form-control-lg" name="hireUsFormNameDetails"
-                                        id="hireUsFormDetails" placeholder="Tell us about your ..."
-                                        aria-label="Tell us about your ..." rows="4"></textarea>
+                                    <label class="form-label" for="Message">Message</label>
+                                    <textarea class="form-control form-control-lg" name="Message" id="Message" placeholder="Tell us about your ..." aria-label="Tell us about your ..." rows="4" required></textarea>
                                 </div>
                                 <!-- End Form -->
 
                                 <div class="d-grid">
-                                    <button type="submit" class="btn btn-primary btn-lg">Send inquiry</button>
+                                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
                                 </div>
 
-                                <div class="text-center">
+                                <!-- <div class="text-center">
                                     <p class="form-text">We'll get back to you in 1-2 business days.</p>
-                                </div>
+                                </div> -->
                             </form>
+                            <div class="modal-dialog modal-dialog-centered" id="status">
+                                <p>We'll get back to you in 1-2 business days.</p>
+                                <p>Thanks for your submission!</p>
+                            </div>
                             <!-- End Form -->
                         </div>
                     </div>
@@ -216,6 +206,29 @@
         </footer>
     </div>
     <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script>
+        var form = document.getElementById("my-form");
+        document.getElementById("status").style.display = "none";
+        async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            document.getElementById("status").style.display = "block";
+            // status.innerHTML = "We'll get back to you in 1-2 business days. Thanks for your submission!";
+            form.reset()
+        }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
 </body>
 
 </html>
