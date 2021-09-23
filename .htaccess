@@ -4,29 +4,30 @@ ExpiresActive On
 ExpiresByType image/jpg “access 1 year”
 ExpiresByType image/jpeg “access 1 year”
 ExpiresByType image/gif “access 1 year”
+ExpiresByType image/webp “access 1 year”
 ExpiresByType image/png “access 1 year”
-ExpiresByType text/css “access 1 month”
-ExpiresByType text/html “access 1 month”
-ExpiresByType application/pdf “access 1 month”
-ExpiresByType text/x-javascript “access 1 month”
-ExpiresByType application/x-shockwave-flash “access 1 month”
+ExpiresByType text/css “access 1 year”
+ExpiresByType text/html “access 1 year”
+ExpiresByType application/pdf “access 1 year”
+ExpiresByType text/x-javascript “access 1 year”
+ExpiresByType application/x-shockwave-flash “access 1 year”
 ExpiresByType image/x-icon “access 1 year”
-ExpiresDefault “access 1 month”
+ExpiresDefault “access 1 year”
 </IfModule>
 
 ; Leverage Browser Caching – Cache-Control Method
 <IfModule mod_headers.c>
-<filesmatch “\.(ico|flv|jpg|jpeg|png|gif|css|swf)$”>
-Header set Cache-Control “max-age=2678400, public”
+<filesmatch “\.(ico|flv|jpg|jpeg|png|gif|webp|css|swf)$”>
+Header set Cache-Control “max-age=31536000, public”
 </filesmatch>
 <filesmatch “\.(html|htm)$”>
-Header set Cache-Control “max-age=7200, private, must-revalidate”
+Header set Cache-Control “max-age=31536000, private, must-revalidate”
 </filesmatch>
 <filesmatch “\.(pdf)$”>
-Header set Cache-Control “max-age=86400, public”
+Header set Cache-Control “max-age=2678400, public”
 </filesmatch>
 <filesmatch “\.(js)$”>
-Header set Cache-Control “max-age=2678400, private”
+Header set Cache-Control “max-age=31536000, private”
 </filesmatch>
 </IfModule>
 
