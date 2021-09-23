@@ -58,6 +58,27 @@
   --bs-body-bg: #fff;
   scroll-behavior: smooth;
 }
+
+@font-face {
+  font-family: 'Poppins' ;
+  src:  url('../fonts/Poppins-Black.ttf') format('ttf'),
+        url('../fonts/Poppins-BlackItalic.ttf') format('ttf'),
+        url('../fonts/Poppins-Bold.ttf') format('ttf'),
+        url('../fonts/Poppins-BoldItalic.ttf') format('ttf'),
+        url('../fonts/Poppins-ExtraBold.ttf') format('ttf'),
+        url('../fonts/Poppins-ExtraBoldItalic.ttf') format('ttf'),
+        url('../fonts/Poppins-ExtraLight.ttf') format('ttf'),
+        url('../fonts/Poppins-ExtraLightItalic.ttf') format('ttf'),
+        url('../fonts/Poppins-Italic.ttf') format('ttf'),
+        url('../fonts/Poppins-Light.ttf') format('ttf'),
+        url('../fonts/Poppins-LightItalic.ttf') format('ttf'),
+        url('../fonts/Poppins-ExtraLightItalic.ttf') format('ttf'),
+        url('../fonts/Poppins-Medium.ttf') format('ttf'),
+        url('../fonts/Poppins-MediumItalic.ttf') format('ttf'),
+        url('../fonts/Poppins-Regular.ttf') format('ttf'),
+        url('../fonts/Poppins-SemiBold.ttf') format('ttf'),
+        url('../fonts/Poppins-SemiBoldItalic.ttf') format('ttf'),
+}
 *,
 ::after,
 ::before {
@@ -66,7 +87,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: 'Poppins';
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
